@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combining Selectors</title>
+    <style>
+
+      /* Group */
+      h1, h2 {
+        color: blue;
+      }
+
+      /* Child */
+      .box > p{
+        color: firebrick;
+      }
+
+      /* Descendant */
+      .box li {
+        color: blue;
+      }
+
+      /* Chaining */
+      li.done {
+        color: seagreen;
+      }
+
+      /* Combiners */
+      ul p.done{
+        font-size: 0.5rem;
+      }
+
+    </style>
+</head>
+<body>
+
+    <h1>To Do List</h1>
+    <h2>Monday</h2>
+    <div class="box">
+      <p class="done">Do these things today!</p>
+      <ul class="list">
+        <li>Wash clothes</li>
+        <li class="done">Read</li>
+        <li class="done">Math questions</li>
+      </ul>
+    </div>
+
+    <ul>
+      <p class="done">Other items</p>
+    </ul>
+    <p>The best preparation for tomorrow is doing your best for today.</p>
+    
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conditions</title>
+</head>
+<body>
+
+</body>
+  <script>
+    
+    var x = 10;
+    var y = 50;
+
+    // The if statement
+
+    // Is equal
+    if (x == 10) {
+      console.log("Is equal!");
+    }
+
+    // Is not equal
+    if (x != 35) {
+      console.log("Is not equal!");
+    }
+
+    // Using OR
+    if (x == 10 || x < 20) {
+      console.log("Using OR");
+    }
+
+    // Using AND
+    if (x == 10 && x < 15) {
+      console.log("Using AND");
+    } 
+
+    // Else and ElseIf
+    if (x == y) {
+      console.log("Is equal!");
+    } else if (x < 15) {
+      console.log("Is less than");
+    } else {
+      console.log("Else!");
+    }
+
+    // Nested IF
+    var gender = "female";
+    var age = 26;
+
+    if (gender == "male") {
+      if (age > 18) {
+        console.log("You a " + gender + " above the legal limit!");
+      } else {
+        console.log("Sorry dude!");
+      }
+    } else if (gender == "female") {
+      if (age > 18) {
+        console.log("You a " + gender + " above the legal limit!");
+      } else {
+        console.log("Sorry lady!");
+      }
+    } else {
+      console.log("Sorry, can't figure out your gender.");
+    }
+   
+  </script>
+</html>

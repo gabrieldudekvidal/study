@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Change Elements Using JS</title>
+</head>
+<body>
+  <h2 id="header-h2">I'm a JavaScript learner.</h2>
+
+  <h3 class="my-h3 sub-title">This is cool.</h3>
+  
+</body>
+<script>
+  // Grab the h2 based on its id
+  h2 = document.querySelector("#header-h2");
+  // Change the text of the h2
+  h2.innerHTML = "I'm a developer.";
+  // Change the id of the h2
+  h2.id = "header-h2-new-id";
+
+
+  // Get the class names of h3
+  h3 = document.querySelector(".my-h3");
+  className = h3.className;
+  // Get class list
+  classes = h3.classList;
+  // Add a new class
+  classes.add("new-class");
+  // Remove class
+  classes.remove("new-class");
+  // Toggle will remove the value from the class and add again if executed again
+  classes.toggle("sub-title");
+  // Check if a class exists or not (useful with if statements)
+  classes.contains("my-h3");
+
+  // Change the html class (firts what attribute to change and then of what you want to change)
+  h3.setAttribute("class", "my-header");
+  // You can also add a new attribute
+  h3.setAttribute("href", "www.google.com");
+  // To remove you just need to have one parameter
+  h3.removeAttribute("href");
+
+  console.log(h3);
+</script>
+</html>

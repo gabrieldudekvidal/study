@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Absolute</title>
+</head>
+<style>
+
+  .static {
+    width: 900px;
+    height: 250px;
+    background-color: seagreen;
+    z-index: 0;
+  }
+
+  .absolute {
+    width: 250px;
+    height: 250px;
+    background-color: salmon;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    z-index: -1;
+  }
+  
+</style>
+<body>
+
+  <div class="static">
+    <p>Box 1 is static and box2 is behind with z-index of -1.</p>
+  </div>
+
+  <div class="absolute">
+  </div>
+
+</body>
+</html>

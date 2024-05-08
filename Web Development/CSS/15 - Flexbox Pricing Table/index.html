@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+  <title>Pricing Table</title>
+</head>
+<style>
+  .body {
+    font-family: 'Lora', serif;
+  }
+
+  .pricing-container {
+    display: flex;
+    justify-content: center;
+    /*to place in the center*/
+    align-items: center;
+    /*to place in the center*/
+    height: 100vh;
+    gap: 2rem;
+  }
+
+  .pricing-plan {
+    background-color: #f2f2f2;
+    flex: 1;
+    /*to make all equal in width*/
+    max-width: 400px;
+    /*don't get bigger than 400px*/
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .plan-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .plan-price {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .plan-features {
+    list-style: none;
+    /*to hide bullet points*/
+    padding: 0;
+    margin: 0;
+  }
+
+  .plan-features li {
+    margin-bottom: 20px;
+  }
+
+  .plan-button {
+    padding: 10px;
+    background-color: #ff6600;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+  }
+
+  @media (max-width: 1250px) {
+    .pricing-container {
+      flex-direction: column;
+      height: 100%;
+    }
+  }
+</style>
+
+<body>
+  <div class="pricing-container">
+    <div class="pricing-plan">
+      <div class="plan-title">Basic</div>
+      <div class="plan-price">$ 9.99/month</div>
+      <ul class="plan-features">
+        <li>10Gb Storage</li>
+        <li>1 User</li>
+        <li>Support</li>
+      </ul>
+      <button class="plan-button">Sign Up</button>
+    </div>
+
+    <div class="pricing-plan">
+      <div class="plan-title">Standard</div>
+      <div class="plan-price">$ 19.99/month</div>
+      <ul class="plan-features">
+        <li>50Gb Storage</li>
+        <li>5 User</li>
+        <li>Support</li>
+      </ul>
+      <button class="plan-button">Sign Up</button>
+    </div>
+
+    <div class="pricing-plan">
+      <div class="plan-title">Premium</div>
+      <div class="plan-price">$ 49.99/month</div>
+      <ul class="plan-features">
+        <li>100Gb Storage</li>
+        <li>10 User</li>
+        <li>Support</li>
+      </ul>
+      <button class="plan-button">Sign Up</button>
+    </div>
+  </div>
+</body>
+
+</html>

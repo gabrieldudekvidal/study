@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Welcoming Page</title>
+</head>
+<body>
+  
+</body>
+<script>
+  let getBody = document.body;
+
+  let newElement = document.createElement("h1");
+
+  // Create date object
+  let date = new Date();
+  let currentHour = date.getHours();
+
+  let createTextMsg;
+
+  if (currentHour >= 4 && currentHour < 10) {
+    createTextMsg = "Good morning!";
+  } else if (currentHour >= 10 && currentHour < 12) {
+    createTextMsg = "Good day!";
+  } else if (currentHour >= 12 && currentHour < 18) {
+    createTextMsg = "Good afternoon!";
+  } else if (currentHour >= 18 && currentHour < 22) {
+    createTextMsg = "Good evening!";
+  } else if (currentHour >= 22 || currentHour < 4) {
+    createTextMsg = "Good night!";
+  } else {
+    createTextMsg = "Are you from a different planet?";
+  }
+
+  let createEleTxt = document.createTextNode(createTextMsg);
+  newElement.appendChild(createEleTxt);
+
+  // Display message on the website
+  getBody.appendChild(newElement);
+
+  // Add a class
+  newElement.setAttribute("class", "message");
+  // Add style to class
+  newElement.style.cssText = "text-align: center; font-size: 60px; font-family: arial;";
+
+</script>
+</html>

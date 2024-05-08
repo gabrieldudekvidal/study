@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inline Flex</title>
+  <style>
+
+    .container {
+      display: inline-flex;
+      gap: 10px;
+    }
+
+    .container > div {
+      background-color: salmon;
+      width: 200px;
+      height: 200px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="one">one flex</div>
+    <div class="two">two flex</div>
+    <div class="three">three flex!</div>
+  </div>
+
+  <div class="container">
+    <div class="one">Cool! inline flex lets you place content on his side.</div>
+  </div>
+
+</body>
+</html>

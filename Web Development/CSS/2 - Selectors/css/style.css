@@ -1,0 +1,29 @@
+/* Class selector */
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
+.blue {
+    color: blue;
+}
+
+/* ID selector */
+
+#id-selector {
+    color: purple;
+}
+
+/* Draggable */
+
+h2[draggable="true"] {
+    color: cornflowerblue;
+}
+
+* {
+    /* color: red; */
+}

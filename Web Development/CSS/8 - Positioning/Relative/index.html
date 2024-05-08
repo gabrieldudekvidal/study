@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relative</title>
+  <style>
+
+    .static, .relative {
+      width: 250px;
+      height: 250px;
+    }
+
+    .static {
+      background-color: seagreen;
+    }
+
+    .relative {
+      background-color: salmon;
+      position: relative;
+      top: 100px;
+      left: 100px;
+    }
+    
+  </style>
+</head>
+<body>
+
+  <div class="static">
+    <p>Box 1 is static.</p>
+  </div>
+
+  <div class="relative">
+    <p>Box 2 is relative to it's original position.</p>
+  </div>
+  
+</body>
+</html>

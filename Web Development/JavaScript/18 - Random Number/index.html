@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Random Number</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // Round numbers
+    console.log(Math.floor(10.8));
+    console.log(Math.floor(-2.2));
+
+    // Random numbers between 0 and 10
+    r1 = (Math.random() * 10) + 1;
+    console.log(r1)
+
+    // Random number without decimals
+    r2 = Math.floor((Math.random() * 10) + 1);
+    console.log(r2)
+
+    // Function to generate random numbers based on 2 numbers
+    let getRandomNumber = function(start, range) {
+        let getRandom = Math.floor((Math.random() * range) + start);
+        // If the ranbom number is greater than the range run the code again
+        while (getRandom > range) {
+            getRandom = Math.floor((Math.random() * range) + start);
+        }
+        return getRandom;
+    }
+    console.log(getRandomNumber(5, 10));
+
+</script>
+</html>

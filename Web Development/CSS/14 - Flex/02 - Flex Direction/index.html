@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Direction</title>
+  <style>
+
+    .container {
+      display: flex;
+      gap: 15px;
+      flex-direction: column;
+    }
+
+    .container > div {
+      background-color: seagreen;
+      flex-basis: 300px; /* setting the width or height */
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="one">one flex</div>
+    <div class="two">two flex</div>
+    <div class="three">three flex!</div>
+  </div>
+
+</body>
+</html>

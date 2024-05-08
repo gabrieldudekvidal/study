@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crete New Content</title>
+</head>
+<style>
+
+    .box {
+        background-color: rgb(159, 159, 229);
+        width: 150px;
+        height: 150px;
+    }
+</style>
+<body>
+
+    <div class="box">
+        <h1>This is a title!</h1>
+        <button onclick="createContent()">Click to show the link</button>
+    </div>
+    
+</body>
+<script>
+
+    function createContent() {
+        // Select the first element with the class "box"
+        let box = document.querySelector(".box");
+
+        // Create a new link
+        let newElement = document.createElement("a");
+
+        // The text content of the a tag
+        newElement.append("This is a link!");
+
+        newElement.setAttribute("href", "http://www.google.com");
+
+        // Append the new element to the selected box
+        box.appendChild(newElement);
+    }
+
+</script>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Font Size</title>
+    <style>
+
+        #pixel {
+            font-size: 12px;
+        }
+        
+        #point {
+            font-size: 12pt;
+        }
+        
+        
+        /* Parent element */
+        
+        .parent {
+            font-size: 12px;
+        }
+        
+        #em {
+            font-size: 2em;
+        }
+        
+        /* Root element */
+        
+        html {
+            font-size: 20px;
+        }
+        
+        #rem {
+            font-size: 3rem; /* 3 times 20px of the html */
+        }
+        
+        </style>
+</head>
+<body>
+
+    <!-- rem is reccommended for font-size -->
+
+    <p id="pixel">The size of this text is set by pixel.</p>
+    <p id="point">The size of this text is set by point.</p>
+
+    <div class="parent">
+        <p id="em">The size of this text is set by em (which is relative to the div parent - 2x the original px size).</p>
+    </div>
+
+    <p id="rem">The size of this text is set by rem (which is relative to the root element).</p>
+    
+</body>
+</html>

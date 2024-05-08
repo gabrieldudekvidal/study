@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Display Grid</title>
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      /*set a fraction for each column. if the column 1 has 100px the column 2 will have 200px */
+      grid-template-rows: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .box {
+      background-color: seagreen;
+      height: 300px;
+      border: solid 1px black;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="box">1fr</div>
+    <div class="box">2fr</div>
+    <div class="box">1fr</div>
+    <div class="box">2fr</div>
+  </div>
+
+</body>
+
+</html>

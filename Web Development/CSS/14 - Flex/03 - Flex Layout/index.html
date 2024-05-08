@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Layout</title>
+  <style>
+
+    .red {background-color: red;}
+    .orange {background-color: orange;}
+    .yellow {background-color: yellow;}
+    .green {background-color: green;}
+    .blue {background-color: blue;}
+    .indigo {background-color: indigo;}
+    .violet {background-color: violet;}
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      /* justify-content: center; */
+      /* justify-content: space-between; */
+      /* justify-content: space-evenly; */
+    }
+
+    .container > div {
+      flex-basis: 250px;
+    }
+    
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="red"><p>red</p></div>
+    <div class="orange"><p>orange</p></div>
+    <div class="yellow"><p>yellow</p></div>
+    <div class="green"><p>green</p></div>
+    <div class="blue"><p>blue</p></div>
+    <div class="indigo"><p>indigo</p></div>
+    <div class="violet"><p>violet</p></div>
+  </div>
+
+  <p>This is flex with flex wrap. Resize to see the result. <br>
+    Notice that the boxes are on the left. This is because we are using justify-content: flex-end;
+  </p>
+  
+</body>
+</html>

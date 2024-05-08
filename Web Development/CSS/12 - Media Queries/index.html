@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Queries</title>
+</head>
+<style>
+
+  h1 {
+    color: seagreen;
+    font-size: 2rem;
+  }
+
+  @media (max-width: 600px) {
+    h1 {
+      color: salmon;
+    }
+  }
+
+  @media (min-width: 600px) and (max-width: 900px) {
+    h1 {
+      color: plum;
+    }
+  }
+
+  @media print {
+    h1 {
+      font-size: 10rem;
+      color: black;
+    }
+  }
+
+</style>
+<body>
+
+  <h1>Responsive !!!</h1>
+
+  <ul>
+    <li>Mobile devices: 319px - 480px</li>
+    <li>iPads and tablets: 418px - 1200px</li>
+    <li>Laptops: 1201 - 1600px</li>
+    <li>Desktops: 1601px and more</li>
+  </ul>
+  
+</body>
+</html>

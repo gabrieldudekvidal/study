@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Properties and Methods</title>
+</head>
+<body>
+
+</body>
+  <script>
+
+    // A property is information about an object and a method does something to the object
+    var item = "Bottle of water";
+
+    // Property to count chars including spaces
+    console.log(item.length);
+
+    // Method to get index of specific piece of data inside of the variable
+    console.log(item.indexOf("w"));
+
+    // Cut a string based on index position
+    console.log(item.substring(7, 9));
+
+    // Replace values
+    console.log(item.replace("water", "juice"));
+
+    // Uppercase and lowercase
+    console.log(item.toUpperCase());
+    console.log(item.toLowerCase());
+
+    // Properties and methods using Arrays
+
+    var myArray = ["Bottle", 4, true];
+
+    // Join all the values of the array into a string
+    console.log(myArray.join());
+    // Set value in between
+    console.log(myArray.join(" - "));
+
+  </script>
+</html>

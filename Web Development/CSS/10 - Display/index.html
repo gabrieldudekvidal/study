@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Display</title>
+</head>
+<style>
+
+  .block {
+    background-color: salmon;
+    width: 250px;
+    height: 250px;
+    display: block;
+  }
+
+  .inline {
+    background-color: seagreen;
+    display: inline;
+  }
+
+  .inline-block {
+    width: 450px;
+    height: 250px;
+    background-color: steelblue;
+    display: inline-block;
+  }
+
+  .hidden-text {
+    display: none;
+  }
+
+</style>
+<body>
+
+  <div class="block">
+    <p>Display block - the next element will be placed below me!</p>
+  </div>
+
+  <div class="inline">
+    <p>Display inline</p>
+  </div>
+  <div class="inline">
+    <p>you can't change my size, sorry.</p>
+  </div>
+
+  <div class="inline-block">
+    <p>Display inline block</p>
+  </div>
+
+  <div class="inline-block">
+    <p>Yey! you can change my size!</p>
+  </div>
+
+  <p class="hidden-text">Hidden text.</p>
+
+</body>
+</html>

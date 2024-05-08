@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fractional Sizing</title>
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-template-rows: 1fr 2fr;
+      gap: 10px;
+    }
+
+    .box {
+      background-color: salmon;
+      border: 1px solid black;
+      font-size: 3rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+  </div>
+
+  <p>It will be adjusted depending on the content size that inside of the box. 1 and 2 are 1 fraction and 3 and 4 are
+    the double of 1 and 2 - 2 fractions.</p>
+
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+Superglobal variables in PHP are predefined variables that are
+accessible from any scope within a PHP script. They are special 
+because they are automatically populated by the PHP engine with
+specific values related to the current request or environment.
+Superglobals are available in both procedural and object-oriented 
+programming styles and are used to gather information or manipulate 
+data across different parts of a PHP script without the need for
+explicit variable passing or global declarations.
+
+The main superglobal variables in PHP include:
+
+$_SERVER: Contains information about the current server and execution 
+environment, such as request headers, server details, and script locations.
+
+$_GET: Holds the values of variables passed to the current script via the URL
+ parameters.
+
+$_POST: Stores the values of variables submitted to the current script via an 
+HTTP POST method.
+
+$_COOKIE: Contains an associative array of variables passed to the script via
+ HTTP cookies.
+
+$_SESSION: Stores and retrieves session-related data, allowing persistence 
+of data across multiple requests.
+
+$_FILES: Contains information about uploaded files via HTTP POST method.
+
+$_REQUEST: Combines the values of $_GET, $_POST, and $_COOKIE into a single array.
+
+These superglobals are accessible from anywhere in the PHP script and can be used
+to access user input, server information, and maintain state across multiple requests.

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex</title>
+  <style>
+
+    .container {
+      display: flex;
+      gap: 10px;
+    }
+
+    .container > div {
+      background-color: salmon;
+      width: 200px;
+      height: 200px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="one">one flex</div>
+    <div class="two">two flex</div>
+    <div class="three">three flex!</div>
+  </div>
+
+  <div class="container">
+    <div class="one">flex doesn't let you put content on his side. So... I will stay here.</div>
+  </div>
+  
+</body>
+</html>

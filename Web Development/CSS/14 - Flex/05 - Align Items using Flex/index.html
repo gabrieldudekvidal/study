@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Align Items Using Flex</title>
+  <style>
+
+    .red {background-color: red;}
+    .orange {background-color: orange;}
+    .yellow {background-color: yellow;}
+    .green {background-color: green;}
+    .blue {background-color: blue;}
+    .indigo {background-color: indigo;}
+    .violet {background-color: violet;}
+
+    .container {
+      display: flex;
+      height: 70vh;
+      justify-content: space-evenly;
+      background-color: aliceblue;
+      align-items: flex-start; /* place on top */
+      align-items: flex-end; /* place on bottom */
+      align-items: center; /* place in the middle of the container */
+    }
+
+    .container > div {
+      flex-basis: 250px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="red"><p>red</p></div>
+    <div class="orange"><p>orange</p></div>
+    <div class="yellow"><p>yellow</p></div>
+    <div class="green"><p>green</p></div>
+    <div class="blue"><p>blue</p></div>
+    <div class="indigo"><p>indigo</p></div>
+    <div class="violet"><p>violet</p></div>
+  </div>
+
+  <p>When using align-items you can't use - wrap.</p>
+  
+</body>
+</html>

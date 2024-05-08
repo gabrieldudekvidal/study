@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Cascade</title>
+
+    <style>
+
+      #outer-box {
+        background-color: purple;
+      }
+
+      .box {
+        background-color: blue;
+        padding: 10px;
+      }
+
+      .inner-box {
+        background-color: red;
+      }
+
+      p {
+        color: yellow;
+        margin: 0;
+        padding: 0;
+      }
+
+      .white-text {
+        color: white;
+      }
+
+    </style>
+
+</head>
+<body>
+    <div id="outer-box" class="box">
+      <div class="box">
+        <p>Yellow Text</p>
+        <div class="box inner-box">
+          <p class="white-text">White Text</p>
+        </div>
+      </div>
+      <div class="box">
+        <p>Yellow Text</p>
+        <div class="box inner-box">
+          <p class="white-text">White Text</p>
+        </div>
+      </div>
+</body>
+</html>
