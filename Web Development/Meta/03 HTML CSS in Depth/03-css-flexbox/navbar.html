@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+</head>
+<style>
+
+    /* Define style for the whole website */
+    * { 
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        background-color: #2b2d42;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: stretch;
+    }
+
+    .container li {
+        list-style-type: none;
+    }
+
+    .container a {
+        display: inline-block;
+        padding: 25px;
+        margin: 0 25px;
+        text-align: center;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .container a:hover {
+        background-color: lightsteelblue;
+    }
+
+</style>
+<body>
+
+    <ul class="container">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Culinary Blog</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Contact Us</a></li>
+    </ul>
+
+</body>
+</html>
