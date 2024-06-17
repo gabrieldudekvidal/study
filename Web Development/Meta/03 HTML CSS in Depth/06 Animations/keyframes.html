@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes</title>
+    <style>
+
+        .box {
+            background-color: yellow;
+            width: 200px;
+            height: 200px;
+        }
+
+        .box:hover {
+            animation: boxanimation 10s infinite ease-in;
+        }
+
+        /* Keyframes defining stages of the animation */
+        @keyframes boxanimation {
+            0%{rotate: 50deg;
+            }
+
+            50%{background-color: aquamarine;
+                height: 210px;
+            }
+
+            100%{width: 400px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        Hover me to start the animation
+    </div>
+    
+</body>
+</html>

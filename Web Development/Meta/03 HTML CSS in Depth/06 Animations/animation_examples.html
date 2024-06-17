@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Examples</title>
+    <style>
+
+        @keyframes bouce {
+            from {
+                transform: translate3d(0, 0, 0);
+            }
+
+            to {
+                transform: translate3d(640px, 0, 0);
+            }
+        }
+
+        #ball {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: black;
+            animation: bouce 2s linear; /* Play the animation */
+            animation-direction: alternate; /* Set to play again */
+            animation-iteration-count: infinite;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="ball"></div>
+    
+</body>
+</html>
