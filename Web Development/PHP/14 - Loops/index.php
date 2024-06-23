@@ -31,7 +31,7 @@
 
     // For each loop
 
-    $fruits = array("apple","orange","banana");
+    $fruits = array("apple", "orange", "banana");
 
     foreach ($fruits as $fruit) {
         echo "This is a " . $fruit . "<br>";
