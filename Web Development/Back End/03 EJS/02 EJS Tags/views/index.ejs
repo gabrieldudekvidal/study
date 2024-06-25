@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EJS Tags</title>
+</head>
+
+<body>
+  <h1>
+    <%= title %> <!-- Tags used to render data -->
+  </h1>
+  <p>Current second:
+    <%= seconds %>
+  </p>
+  <% if (seconds % 2===0) { %> <!-- If the current second is even display a list -->
+  <ul>
+    <%items.forEach((fruit)=> { %> <!-- Loop in the items array to get each fruit -->
+      <li>
+        <%=fruit %> <!-- Render data -->
+      </li>
+    <%}) %>
+  </ul>
+  <% } else { %>
+  <p>No items to display</p>
+  <% } %>
+  <p>
+    <%- htmlContent %> <!-- Tags used to display html content -->
+  </p>
+
+  <%- include("footer.ejs") %> <!-- include external ejs file -->
+</body>
+
+</html>
